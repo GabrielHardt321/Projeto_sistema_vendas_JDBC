@@ -12,7 +12,7 @@ public class ProdutoDAO {
         String sql = "INSERT INTO () VALUES()";
 
         try {
-            ps = conexao.conexao.Conexao.getConexao().prepareStatement(sql);
+            ps = conexao.Conexao.getConexao().prepareStatement(sql);
 
             ps.execute();
             ps.close();
