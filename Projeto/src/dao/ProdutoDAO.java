@@ -7,12 +7,12 @@ import conexao.entidades.Produto;
 public class ProdutoDAO {
     
 
-    public void addProduto(Produto produto){
+    public static void addProduto(Produto produto){
         PreparedStatement ps = null;
         String sql = "INSERT INTO () VALUES()";
 
         try {
-            ps = conexao.Conexao.getConexao().prepareStatement(sql);
+            ps = conexao.conexao.Conexao.getConexao().prepareStatement(sql);
 
             ps.execute();
             ps.close();
