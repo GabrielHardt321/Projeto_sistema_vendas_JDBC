@@ -5,13 +5,18 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-    private static final String URL = "jdbc:mysql://localhost:3306/sistema_vendas";
-    private static final String USER = "root";
-    private static final String PASS = "Sua_senha";
+    private static final String url = "jdbc:mysql://localhost:3306/sistema_vendas";
+    private static final String user = "root";
+    private static final String pass = "";
 
-    public static Connection getConexao() {
+    private static Connection conn = null;
+    public static Connection getConexao(){
         try{
-            return DriverManager.getConnection(URL, USER, PASS);
+            if(conn == null){
+                conn = DriverManager.getConnection(url,user,pass);
+                return conn;
+            }else {return  conn;}
+
         } catch (SQLException e) {
             System.out.println("Erro: " + e.getMessage());
             return null;
