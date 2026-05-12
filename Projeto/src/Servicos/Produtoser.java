@@ -10,7 +10,9 @@ public class Produtoser {
             ProdutoDAO.addProduto(produto);
             System.out.println("Produto cadastrado");
         }
-
+    }
+    public void mostrar(Produto produto){
+        ProdutoDAO.addProduto(produto);
     }
     }
 

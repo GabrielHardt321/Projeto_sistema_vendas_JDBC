@@ -1,5 +1,6 @@
 package conexao.Menu;
 
+import conexao.DAO.ProdutoDAO;
 import conexao.entidades.Produto;
 
 import java.util.Scanner;
@@ -12,10 +13,10 @@ public class Menuadd {
         produto.setNome(cin.nextLine());
         System.out.print("Preço: ");
         produto.setPreco(cin.nextFloat());
-        System.out.println("Estoque: ");
+        System.out.print("Estoque: ");
         produto.setEstoque(cin.nextInt());
         new Produtoser().adicionar(produto);
-
+        new ProdutoDAO().mostrarProduts(produto);
     }
 
 }

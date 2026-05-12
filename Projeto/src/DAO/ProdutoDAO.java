@@ -41,7 +41,7 @@ public class ProdutoDAO {
                 float preco = res.getFloat("preco");
                 int estoque = res.getInt("estoque");
 
-                System.out.printf("ID: %5d\tNOME: %-25s\tPRECO: R$%.2f\tEstoque: %d" , id , nome,preco,estoque);
+                System.out.printf("ID: %5d\tNOME: %-25s\tPRECO: R$%.2f\tEstoque: %d%n" , id , nome,preco,estoque);
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
