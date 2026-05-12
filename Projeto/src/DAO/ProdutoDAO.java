@@ -1,6 +1,8 @@
 package conexao.DAO;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 import conexao.entidades.Produto;
 
@@ -23,6 +25,26 @@ public class ProdutoDAO {
             
         } catch (Exception e) {
             // TODO: handle exception
+        }
+    }
+    public void mostrarProduts(Produto produto){
+        Statement sts = null;
+        ResultSet res = null;
+        String sql = "Select * from produtos";
+        try {
+            sts = conexao.conexao.Conexao.getConexao().createStatement();
+            res = sts.executeQuery(sql);
+
+            while (res.next()){
+                int id = res.getInt("id");
+                String nome = res.getString("nome");
+                float preco = res.getFloat("preco");
+                int estoque = res.getInt("estoque");
+
+                System.out.printf("ID: %5d\tNOME: %-25s\tPRECO: R$%.2f\tEstoque: %d" , id , nome,preco,estoque);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
     }
