@@ -1,7 +1,4 @@
-package conexao;
-
-import conexao.Menu.Menuadd;
-import conexao.entidades.Produto;
+package Conexao;
 
 import java.util.Scanner;
 
@@ -167,10 +164,12 @@ public class App {
 
             System.out.println("OPÇÃO INVÁLIDA!");
         }
+        sca.close();
 
     }
 
 
 
     public static void linha(){System.out.println("==============================================================");}
+
 }

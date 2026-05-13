@@ -1,10 +1,10 @@
-package conexao.Menu;
+package Conexao.Menu;
 
-import conexao.DAO.ProdutoDAO;
-import conexao.entidades.Produto;
+import Conexao.DAO.ProdutoDAO;
+import Conexao.entidades.Produto;
 
 import java.util.Scanner;
-import conexao.Servicos.Produtoser;
+import Conexao.Servicos.Produtoser;
 
 public class Menuadd {
     Scanner cin = new Scanner(System.in);

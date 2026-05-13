@@ -1,4 +1,4 @@
-package conexao.Menu;
+package Conexao.Menu;
 
 public class Menudel {
 }

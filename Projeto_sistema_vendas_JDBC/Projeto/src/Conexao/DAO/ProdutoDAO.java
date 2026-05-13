@@ -1,10 +1,10 @@
-package conexao.DAO;
+package Conexao.DAO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import conexao.entidades.Produto;
+import Conexao.entidades.Produto;
 
 public class ProdutoDAO {
     
@@ -14,7 +14,7 @@ public class ProdutoDAO {
         String sql = "INSERT INTO produtos (nome_produtos, preco , estoque) VALUES(?,?,?)";
 
         try {
-            ps = conexao.conexao.Conexao.getConexao().prepareStatement(sql);
+            ps = Conexao.conexao.Conexao.getConexao().prepareStatement(sql);
 
             ps.setString(1, produto.getNome_Produtos());
             ps.setFloat(2,produto.getPreco());
@@ -24,7 +24,7 @@ public class ProdutoDAO {
             ps.close();
             
         } catch (Exception e) {
-            // TODO: handle exception
+            
         }
     }
     public void mostrarProduts(Produto produto){
@@ -32,7 +32,7 @@ public class ProdutoDAO {
         ResultSet res = null;
         String sql = "Select * from produtos";
         try {
-            sts = conexao.conexao.Conexao.getConexao().createStatement();
+            sts = Conexao.conexao.Conexao.getConexao().createStatement();
             res = sts.executeQuery(sql);
 
             while (res.next()){

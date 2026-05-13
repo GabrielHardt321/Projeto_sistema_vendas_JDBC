@@ -1,4 +1,4 @@
-package conexao.entidades;
+package Conexao.entidades;
 
 public class Produto {
 
