@@ -2,7 +2,7 @@ package conexao.DAO;
 
 import java.sql.*;
 import java.util.List;
-import conexao.entidades.Pedidos; // Verifique se o nome da classe é Pedidos ou Pedido
+import conexao.entidades.Pedidos;
 import conexao.entidades.ItemPedido;
 import conexao.Conexao;
 
