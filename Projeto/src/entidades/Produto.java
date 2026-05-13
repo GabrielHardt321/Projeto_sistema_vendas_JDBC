@@ -15,7 +15,7 @@ public class Produto {
     }
 
     public int getId_Produtos() {
-        return id_Produtos;
+        return id_produtos;
     }
 
     public void setId_Produtos(int id_produtos) {

@@ -16,7 +16,7 @@ public class ProdutoDAO {
         try {
             ps = conexao.conexao.Conexao.getConexao().prepareStatement(sql);
 
-            ps.setString(1, produto.getNome());
+            ps.setString(1, produto.getNome_Produtos());
             ps.setFloat(2,produto.getPreco());
             ps.setInt(3,produto.getEstoque());
 
