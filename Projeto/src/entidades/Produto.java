@@ -2,25 +2,32 @@ package conexao.entidades;
 
 public class Produto {
 
-    private  int id;
-    private String nome;
+    private  int id_produtos;
+    private String nome_produtos;
     private  float preco;
     private  int estoque;
 
-    public int getId() {
-        return id;
+    public Produto(int id_produtos, String nome_produtos, float preco, int estoque) {
+        this.id_produtos = id_produtos;
+        this.nome_produtos = nome_produtos;
+        this.preco = preco;
+        this.estoque = estoque;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getId_Produtos() {
+        return id_Produtos;
     }
 
-    public String getNome() {
-        return nome;
+    public void setId_Produtos(int id_produtos) {
+        this.id_produtos = id_produtos;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getNome_Produtos() {
+        return nome_produtos;
+    }
+
+    public void setNome_Produtos(String nome_produtos) {
+        this.nome_produtos = nome_produtos;
     }
 
     public float getPreco() {

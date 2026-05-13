@@ -11,7 +11,7 @@ public class ProdutoDAO {
 
     public static void addProduto(Produto produto){
         PreparedStatement ps = null;
-        String sql = "INSERT INTO produtos (nome, preco , estoque) VALUES(?,?,?)";
+        String sql = "INSERT INTO produtos (nome_produtos, preco , estoque) VALUES(?,?,?)";
 
         try {
             ps = conexao.conexao.Conexao.getConexao().prepareStatement(sql);
