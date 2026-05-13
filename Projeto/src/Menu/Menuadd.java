@@ -10,7 +10,7 @@ public class Menuadd {
     Scanner cin = new Scanner(System.in);
     public  void Produtoadd(Produto produto){
         System.out.print("Nome: ");
-        produto.setNome(cin.nextLine());
+        produto.setNome_Produtos(cin.nextLine());
         System.out.print("Preço: ");
         produto.setPreco(cin.nextFloat());
         System.out.print("Estoque: ");
