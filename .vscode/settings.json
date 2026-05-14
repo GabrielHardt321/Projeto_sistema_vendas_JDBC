@@ -1,6 +1,14 @@
 {
+<<<<<<< Updated upstream
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "Projeto/lib/mysql-connector-j-9.7.0.jar"
+=======
+    "java.project.sourcePaths": [
+        "Projeto_sistema_vendas_JDBC/Projeto/src/entidades",
+        "Projeto/src/entidades",
+        "Projeto/src",
+        "Projeto_sistema_vendas_JDBC/Projeto/src"
+>>>>>>> Stashed changes
     ]
 }

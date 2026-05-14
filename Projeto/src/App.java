@@ -1,12 +1,11 @@
-package conexao;
-
-import conexao.Menu.Menuadd;
-import conexao.entidades.Produto;
+import conexao.Conexao;
+import Menu.Menuadd;
+import Entidades.Produto;
 
 import java.util.Scanner;
 
 public class App {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner  sca = new Scanner(System.in);
         System.out.println("███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗    ██████╗ ██████╗       ██████╗ ██████╗      ██╗    ██████╗ ");
         System.out.println("██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║    ██╔══██╗╚════██╗      ██╔══██╗╚════██╗    ███║   ██╔═████╗");

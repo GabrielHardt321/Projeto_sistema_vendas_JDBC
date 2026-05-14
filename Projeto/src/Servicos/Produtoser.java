@@ -1,8 +1,8 @@
-package conexao.Servicos;
+package Servicos;
 
 
-import conexao.DAO.ProdutoDAO;
-import conexao.entidades.Produto;
+import DAO.ProdutoDAO;
+import Entidades.Produto;
 
 public class Produtoser {
     public void  adicionar(Produto produto) {

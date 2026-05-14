@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream:Projeto/src/entidades/Produto.java
 //package conexao.entidades;
+=======
+package Entidades;
+>>>>>>> Stashed changes:Projeto_sistema_vendas_JDBC/Projeto/src/entidades/Produto.java
 
 public class Produto {
 
